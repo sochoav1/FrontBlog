@@ -22,14 +22,14 @@ function AddPost() {
 
     return (
         <div className="mb-4">
-            <h2>Add Post</h2>
+            <h2>Add Your Post!</h2>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label className="form-label">Title</label>
+                    <label className="form-label">What's The Title Of Your Post?</label>
                     <input type="text" className="form-control" value={title} onChange={e => setTitle(e.target.value)} />
                 </div>
                 <div className="mb-3">
-                    <label className="form-label">Content</label>
+                    <label className="form-label">Tell Me About</label>
                     <textarea className="form-control" value={content} onChange={e => setContent(e.target.value)} />
                 </div>
                 <button type="submit" className="btn btn-primary">Add</button>
